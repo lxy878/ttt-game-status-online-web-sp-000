@@ -30,3 +30,6 @@ end
 def winner(board)
 
 end
+
+
+puts won(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
