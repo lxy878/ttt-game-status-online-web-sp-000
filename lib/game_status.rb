@@ -10,7 +10,6 @@ WIN_COMBINATIONS = [
   [0,4,8],[6,4,2]]
 
 def won(board)
-
   winning = WIN_COMBINATIONS.select do |win|
     taken = win.all? {|postion| board[postion] != " "}
     taken and (board[win[0]] == board[win[1]] and board[win[1]] == board[win[2]])
