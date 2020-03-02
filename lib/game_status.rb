@@ -36,4 +36,4 @@ def winner(board)
 end
 
 
-puts won([["X", "X", "X", "O", "O", " ", " ", " ", " "])
+puts won(["X", "X", "X", "O", "O", " ", " ", " ", " "])
