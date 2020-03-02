@@ -10,9 +10,10 @@ WIN_COMBINATIONS = [
   [0,4,8],[6,4,2]]
 
 def won(board)
-  empty = board.all? {|position| return board[position] == " "}
-  if empty
-    return false
+  board.each do |position|
+    if position_taken?(borad, position)
+
+    end
   end
 
   WIN_COMBINATIONS.each do |win|
@@ -41,4 +42,4 @@ def winner(board)
 end
 
 
-puts won([" ", " ", " ", " ", " ", " ", " ", " ", " "])
+# puts won([" ", " ", " ", " ", " ", " ", " ", " ", " "])
