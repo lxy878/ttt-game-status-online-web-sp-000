@@ -23,15 +23,15 @@ def won?(board)
   return false
 end
 
-def full(board)
+def full?(board)
   board.none? {|position| position==" "}
 end
 
-def draw(borad)
+def draw?(borad)
 
 end
 
-def over(board)
+def over?(board)
   # draw or win or full
 end
 
@@ -39,6 +39,5 @@ def winner(board)
 
 end
 
-
-puts won?([" ", " ", " ", " ", " ", " ", " ", " ", " "])
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+puts won?(board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"])
