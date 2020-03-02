@@ -49,4 +49,4 @@ def winner(board)
 end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
-puts draw?(board)
+puts over?(board)
