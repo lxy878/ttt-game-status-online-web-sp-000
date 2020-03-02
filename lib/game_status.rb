@@ -16,9 +16,7 @@ def won(board)
   winning = WIN_COMBINATIONS.select do |win|
     print "#{win}\n"
     taken = win.all? {|postion| board[postion] != " "}
-    puts taken
-    puts board[win[0]] == board[win[1]]
-    puts board[win[1]] == board[2]
+    taken and (board[win[0]] == board[win[1]] and board[win[1]] == board[win[2]]))
   end
 
   if winning.size == 0
