@@ -15,6 +15,7 @@ def won(board)
       return win
     else
       return false
+    end
   end
 end
 
