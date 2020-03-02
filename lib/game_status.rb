@@ -11,6 +11,10 @@ WIN_COMBINATIONS = [
 
 def won(board)
   if board.all? {|position| position_taken?(board), position}
+    return false
+  end
+
+  
 end
 
 def full(board)
