@@ -43,3 +43,5 @@ end
 
 
 # puts won([" ", " ", " ", " ", " ", " ", " ", " ", " "])
+board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
+puts position_taken(board, )
