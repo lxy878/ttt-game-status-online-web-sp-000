@@ -10,6 +10,9 @@ WIN_COMBINATIONS = [
   [0,4,8],[6,4,2]]
 
 def won(board)
+  if borad.all? {|position| position == " "}
+    return false
+  end
   WIN_COMBINATIONS.select do |win|
     if board[win[0]] == board[win[1]] and board[win[1]] == board[2]
       return win
