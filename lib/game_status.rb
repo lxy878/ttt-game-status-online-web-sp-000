@@ -48,7 +48,7 @@ def winner(board)
     win_move = won?(board)
     if win_move == false
       return nil
-    else 
+    else
       board[win_move[0]]
     end
 end
