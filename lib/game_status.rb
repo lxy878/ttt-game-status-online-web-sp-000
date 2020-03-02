@@ -17,7 +17,11 @@ def won(board)
     taken and (board[win[0]] == board[win[1]] and board[win[1]] == board[win[2]])
   end
 
-  puts winning
+  if winning.size <= 0
+    return false
+  end
+
+  return winning
 end
 
 def full(board)
