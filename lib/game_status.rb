@@ -14,8 +14,8 @@ def won(board)
     taken = win.all? {|postion| board[postion] != " "}
     taken and (board[win[0]] == board[win[1]] and board[win[1]] == board[win[2]])
   end
-  
-  if winning.size <= 0
+
+  if winning.empty?
     return false
   end
 
@@ -39,4 +39,4 @@ def winner(board)
 end
 
 
-puts won([" ", " ", " ", " ", " ", " ", " ", " ", " "])
+puts won(["O", " ", "X", "O", " ", "X", "O", " ", " "])
