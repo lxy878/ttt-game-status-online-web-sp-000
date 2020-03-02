@@ -54,4 +54,4 @@ end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
 #puts winner(board)
-board.class == "Array"
+puts board.class == "Array"
