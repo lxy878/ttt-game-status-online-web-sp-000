@@ -45,8 +45,9 @@ def over?(board)
 end
 
 def winner(board)
-  return board[won?(board)[0]]
+  win_move = won?(board)
+  return board[win_move[0]]
 end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
-puts over?(board)
+puts winner(board)
