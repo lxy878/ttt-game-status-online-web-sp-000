@@ -10,10 +10,8 @@ WIN_COMBINATIONS = [
   [0,4,8],[6,4,2]]
 
 def won(board)
-  board.each do |position|
-    if position_taken?(borad, position)
-      break
-    end
+  if board.all? {|position| position == " "}
+    return false
   end
 
   WIN_COMBINATIONS.each do |win|
