@@ -12,7 +12,7 @@ WIN_COMBINATIONS = [
 def won(board)
   board.each do |position|
     if position_taken?(borad, position)
-
+      break
     end
   end
 
