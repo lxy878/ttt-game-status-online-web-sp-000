@@ -17,7 +17,8 @@ def won(board)
     print "#{win}\n"
     taken = win.all? {|postion| board[postion] != " "}
     puts taken
-    puts (board[win[0]] == board[win[1]] and board[win[1]] == board[2])
+    puts board[win[0]] == board[win[1]]
+    puts board[win[1]] == board[2]
   end
 
   if winning.size == 0
