@@ -9,9 +9,9 @@ WIN_COMBINATIONS = [
   [0,3,6],[1,4,7],[2,5,8],
   [0,4,8],[6,4,2]]
 
-def won(borad)
+def won(board)
   WIN_COMBINATIONS.select do |win|
-    borad[win[0]] == board[win[1]] and borad[win[1]] == board[2]
+    board[win[0]] == board[win[1]] and board[win[1]] == board[2]
   end
 end
 
