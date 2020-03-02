@@ -19,7 +19,7 @@ def won(board)
     return false
   end
 
-  return winning
+  return winning.class
 end
 
 def full(board)
