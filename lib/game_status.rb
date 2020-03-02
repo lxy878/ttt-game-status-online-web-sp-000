@@ -45,8 +45,6 @@ end
 # puts won([" ", " ", " ", " ", " ", " ", " ", " ", " "])
 board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
 position_taken?(board, 0)
-empty = board.all? do |position|
-  position_taken?(board, position)
-end
+empty = board.all? {|position| position == " "}
 
 puts empty
