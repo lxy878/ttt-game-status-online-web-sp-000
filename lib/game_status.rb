@@ -53,4 +53,5 @@ def winner(board)
 end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
-puts winner(board)
+#puts winner(board)
+board.class == "Array"
