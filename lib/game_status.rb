@@ -10,7 +10,7 @@ WIN_COMBINATIONS = [
   [0,4,8],[6,4,2]]
 
 def won(board)
-  empty = board.all? {|position| board[position] == " "}
+  empty = board.all? {|position| return board[position] == " "}
   if empty
     return false
   end
