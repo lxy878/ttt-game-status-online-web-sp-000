@@ -15,7 +15,7 @@ def won?(board)
   end
 
   WIN_COMBINATIONS.each do |win|
-    if (board[win[0]] == "X" and board[win[1]] == "X" and board[win[2]] == "X") or (board[win[0]] == "O" and board[win[1]] == "O" and board[win[2]] == "O") 
+    if (board[win[0]] == "X" and board[win[1]] == "X" and board[win[2]] == "X") or (board[win[0]] == "O" and board[win[1]] == "O" and board[win[2]] == "O")
       return win
     end
   end
