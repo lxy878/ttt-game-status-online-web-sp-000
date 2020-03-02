@@ -25,4 +25,4 @@ def winner(board)
 
 end
 
-puts full(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
+puts full(["X", "O", "X", "O", "X", "X", "O", " ", "O"])
