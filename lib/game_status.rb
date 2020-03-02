@@ -45,11 +45,12 @@ def over?(board)
 end
 
 def winner(board)
-  win_move = won?(board)
-  if win_move.size != 0
+  if draw?(board)
+    return nil
+  else
+    win_move = won?(board)
     return board[win_move[0]]
   end
-  return nil
 end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
