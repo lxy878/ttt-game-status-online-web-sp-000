@@ -14,7 +14,13 @@ def won(board)
     return false
   end
 
-  
+  WIN_COMBINATIONS.each do |win|
+    if borad[win[0]] == "X" and borad[win[1]] == "X" and borad[win[2]] == "X"
+      return win
+    end
+  end
+
+  return false
 end
 
 def full(board)
