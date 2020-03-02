@@ -14,7 +14,7 @@ def won(borad)
 end
 
 def full(board)
-
+  empty = board.none? {|position| position==" "}
 end
 
 def over(board)
