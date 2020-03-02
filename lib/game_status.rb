@@ -18,7 +18,6 @@ def won(board)
   end
 
   puts winning
-  return winning
 end
 
 def full(board)
