@@ -19,9 +19,11 @@ def won(board)
       return win
     end
   end
+
   if win.size == 0
     return false
   end
+  
   return win
 end
 
