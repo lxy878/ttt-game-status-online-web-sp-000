@@ -53,6 +53,4 @@ def winner(board)
 end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
-#puts winner(board)
-b = false
-puts b.size
+puts winner(board)
