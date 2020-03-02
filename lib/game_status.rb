@@ -25,4 +25,4 @@ def winner(board)
 
 end
 
-puts 
+puts
