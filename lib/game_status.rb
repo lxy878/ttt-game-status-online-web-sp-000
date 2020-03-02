@@ -17,6 +17,10 @@ def full(board)
   board.none? {|position| position==" "}
 end
 
+def draw(borad)
+
+end
+
 def over(board)
 
 end
@@ -24,5 +28,3 @@ end
 def winner(board)
 
 end
-
-puts full(["X", "O", "X", "O", "X", "X", "O", " ", "O"])
