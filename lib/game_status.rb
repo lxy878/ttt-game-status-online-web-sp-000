@@ -54,4 +54,5 @@ end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
 #puts winner(board)
-puts board.class.class
+b = false
+puts b.size
