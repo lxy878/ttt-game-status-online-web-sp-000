@@ -54,4 +54,4 @@ end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
 #puts winner(board)
-puts board.class
+puts board.class.class
