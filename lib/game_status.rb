@@ -13,6 +13,7 @@ def won(board)
 
   WIN_COMBINATIONS.select do |win|
     taken = win.none? {|postion| position_taken?(board, postion)}
+    puts taken
     if taken and (board[win[0]] == board[win[1]] and board[win[1]] == board[2])
       return win
     else
