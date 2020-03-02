@@ -46,7 +46,10 @@ end
 
 def winner(board)
   win_move = won?(board)
-  return board[win_move[0]]
+  if win_move.class == array
+    return board[win_move[0]]
+  end
+  return nil
 end
 
 board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
