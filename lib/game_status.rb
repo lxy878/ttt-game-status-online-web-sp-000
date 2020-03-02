@@ -10,7 +10,9 @@ WIN_COMBINATIONS = [
   [0,4,8],[6,4,2]]
 
 def won(borad)
-
+  WIN_COMBINATIONS.select do |win|
+    borad[win[0]] == board[win[1]] and borad[win[1]] == board[2]
+  end
 end
 
 def full(board)
@@ -22,7 +24,7 @@ def draw(borad)
 end
 
 def over(board)
-
+  # draw or win or full
 end
 
 def winner(board)
